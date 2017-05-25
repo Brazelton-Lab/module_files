@@ -1,0 +1,20 @@
+#%Module1.0
+
+# anvio-2.3.2
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of anvio-2.3.2"
+}
+
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables anvio-2.3.2"
+
+conflict	 anvio-2.0.2 anvio-2.2.2
+
+setenv           PYTHONPATH     #TODO: ADD THIS
+prepend-path     PATH           #TODO: ADD THIS

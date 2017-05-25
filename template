@@ -1,0 +1,25 @@
+#%Module1.0
+
+# <Module/File Name>
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Replace with brief but useful help"
+}
+
+
+# for Tcl script use only
+set     version      <modules version: typically 3.2.10>
+
+module-whatis    "Replace with a few descriptive words about module, e.g. permits use of <program and version>"
+
+conflict	 <add space-separated conflicting modules, must include other versions of same program>
+
+# The following includes a few generalized examples of common commands, "man modulefile" for details
+# See files in this repo for specific examples
+prereq           <space-separated list of module files to load before this one>
+setenv           <variable>     <path for variable to point to>
+append-path      <PATH>         <path to append to <PATH>>
+prepend-path     <PATH>         <path to prepend to <PATH>>
+remove-path      <PATH>         <path to remove, often useful to eliminate conflicting paths>
