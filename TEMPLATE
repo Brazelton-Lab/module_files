@@ -8,6 +8,7 @@ proc ModulesHelp { } {
         puts stderr "Replace with brief but useful help"
 }
 
+exit
 
 # for Tcl script use only
 set     version      <modules version: typically 3.2.10>
