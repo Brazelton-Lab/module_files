@@ -1,0 +1,17 @@
+#%Module1.0
+
+# iRep-1.1.7
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of iRep-1.1.7"
+}
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables iRep-1.1.7"
+
+prepend-path     PYTHONPATH     /usr/local/src/iRep-1.1.7/lib/python3.6/site-packages
+prepend-path     PATH           /usr/local/src/iRep-1.1.7/bin
