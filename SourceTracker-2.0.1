@@ -1,0 +1,17 @@
+#%Module1.0
+
+# SourceTracker-2.0.1
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of SourceTracker-2.0.1"
+}
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables SourceTracker-2.0.1"
+
+prepend-path     PYTHONPATH     /usr/local/src/SourceTracker-2.0.1/lib/python3.6/site-packages
+prepend-path     PATH           /usr/local/src/SourceTracker-2.0.1/bin
