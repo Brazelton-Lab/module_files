@@ -1,0 +1,17 @@
+#%Module1.0
+
+# subread-1.5.2
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of subread-1.5.2"
+}
+
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables subread-1.5.2"
+
+prepend-path     PATH           /usr/local/bin/subread-1.5.2/bin
