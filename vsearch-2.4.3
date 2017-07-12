@@ -1,0 +1,17 @@
+#%Module1.0
+
+# vsearch-2.4.3
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of vsearch-2.4.3"
+}
+
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables vsearch-2.4.3"
+
+prepend-path     PATH           /usr/local/src/vsearch-2.4.3/bin
