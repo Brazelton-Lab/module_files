@@ -1,0 +1,17 @@
+#%Module1.0
+
+# mothur-1.36.1
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of mothur-1.36.1"
+}
+
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables mothur-1.36.1"
+
+prepend-path     PATH           /usr/local/src/mothur-1.36.1/mothur
