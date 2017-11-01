@@ -1,0 +1,16 @@
+#%Module1.0
+
+# parallel-20171022
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of parallel-20171022"
+}
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables use of parallel-20171022"
+
+prepend-path     PATH         /usr/local/bin/parallel-20171022
