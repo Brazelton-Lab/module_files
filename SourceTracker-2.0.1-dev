@@ -13,5 +13,7 @@ set     version      3.2.10
 
 module-whatis    "Enables SourceTracker-2.0.1-dev"
 
+conflicts        programs/SourceTracker-2.0.1
+
 prepend-path     PYTHONPATH     /usr/local/src/SourceTracker-2.0.1-dev/lib/python3.6/site-packages
 prepend-path     PATH           /usr/local/src/SourceTracker-2.0.1-dev/bin
