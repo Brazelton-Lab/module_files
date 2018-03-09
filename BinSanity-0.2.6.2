@@ -1,0 +1,19 @@
+#%Module1.0
+
+# BinSanity-0.2.6.2
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Enables use of BinSanity-0.2.6.2"
+}
+
+
+# for Tcl script use only
+set     version      3.2.10
+
+module-whatis    "Enables BinSanity-0.2.6.2"
+
+conflict	 programs/BinSanity-0.2.5.9
+
+prepend-path     PATH           /usr/local/src/BinSanity-0.2.6.2/bin
