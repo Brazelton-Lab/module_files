@@ -1,0 +1,24 @@
+#%Module1.0
+
+# gtdbtk
+
+proc ModulesHelp { } {
+        global version
+
+        puts stderr "Replace with brief but useful help"
+}
+
+exit  # Remove in real modulefile
+
+# for Tcl script use only
+set     version      <modules version: typically 3.2.10>
+
+module-whatis    "Replace with a few descriptive words about module, e.g. permits use of <program and version>"
+
+conflict	 <add space-separated conflicting modules, must include other versions of same program>
+
+# The following includes a few generalized examples of common commands, "man modulefile" for details
+# See files in this repo for specific examples
+prereq           <space-separated list of module files to load before this one>
+setenv           PYTHONPATH     /usr/local/src/gtdbtk/lib/python3.6/site-packages
+prepend-path     PATH         /usr/local/src/gtdb/bin
